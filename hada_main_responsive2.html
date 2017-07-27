@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+<!-- Begin Responsive template -->
+
+<!-- Scrips for Slider -->
+
+<script src="http://digital.houstonlibrary.net/SpryAssets/jquery.min.js" type="text/javascript"></script>
+
+
+
+<script src="http://digital.houstonlibrary.net/SpryAssets/reelslideshow.js" type="text/javascript">
+
+/***********************************************
+* Continuous Reel Slideshow- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+</script>
+
+
+<script type="text/javascript">
+
+var firstreel=new reelslideshow({
+	wrapperid: "myreel", //ID of blank DIV on page to house Slideshow
+	dimensions: [400, 220], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+	["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/coll_featured/resources/custompages/dentoncooley/public_html/cooleycard.png", "http://digital.houstonlibrary.org/cdm/dentoncooley/collection/featured",  ""],
+	
+	//["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/coll_featured/resources/custompages/snowinhouston/public_html/snowhouston.png", "http://digital.houstonlibrary.org/cdm/snowinhouston/collection/featured",  ""],
+
+//["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/coll_featured/resources/custompages/christmashouston/public_html/christmascard.png","http://digital.houstonlibrary.org/cdm/christmashouston/collection/featured", ""],
+
+
+["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/default/images/GregorySchoolsized.jpg", "http://digital.houstonlibrary.org/cdm/landingpage/collection/gregory", ""],
+			["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/coll_featured/resources/custompages/landing/public_html/forgottenminds.JPG", "http://digital.houstonlibrary.org/cdm/ref/collection/film/id/217", ""],
+
+	["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/default/images/Notsuohsized.jpg", "http://digital.houstonlibrary.org/cdm/search/searchterm/MSS0248", ""],
+
+	//["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/default/images/RiverOakssized.jpg" , "http://digital.houstonlibrary.org/cdm/landingpage/collection/riveroaks", ""],
+		
+			["http://cdm17006.contentdm.oclc.org/ui/custom/default/collection/default/images/Bellairex.jpg", "http://digital.houstonlibrary.org/cdm/landingpage/collection/BelLib", ""],
+		
+		["http://digital.houstonlibrary.net/feature/images/northside-promo.jpg", "http://digital.houstonlibrary.net/oral-history/northside.html", ""] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:5000, cycles:0, pauseonmouseover:true},
+	orientation: "h", //Valid values: "h" or "v"
+	persist: true, //remember last viewed slide and recall within same session?
+	slideduration: 800 //transition duration (milliseconds)
+})
+
+</script>
+
+<!-- End scripts for slider -->
+
+<style type="text/css">
+
+/* From the original site. */
+
+#myreel{ /*sample CSS for demo*/
+	border:10px solid #EBE3CF;
+	height: 220px;
+	width: 400px;
+	background-image: url(http://digital.houstonlibrary.org/cdm4/images/slider-back.jpg);
+}
+
+.paginate{
+	width: 420px;
+	margin-top:5px;
+	font:bold 14px Arial;
+	text-align:center;
+	position: relative;
+	top: -18px;
+	z-index: 500;
+}
+.frame {
+	width: 740px;
+	border: 1px none #CECECE;
+	background-color: #FFFFFF;
+	margin-top: 15px;
+	font-size: 110%;
+}
+.left-column {
+	float: left;
+	width: 430px;
+	margin-top: 0px;
+	font-size: 100%;
+}
+
+.whatsnew-section {
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	float: left;
+	width: 418px;
+}
+.tabs {
+	font-size: 120%;
+}
+
+.divider {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+
+
+	#contentleft {
+	width:300px;
+	padding:0px 5px 0px 0px;
+	float:right;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+		
+			.home-row-cell-top {
+	float: left;
+	width: 295px;
+	margin-right: 5px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #666632;
+}			
+		.home-row-cell {
+	float: left;
+	width: 295px;
+	margin-right: 5px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #666632;
+}
+.home-row-cell-content {
+	float: left;
+	width: 240px;
+	margin-left: 5px;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0A334B;
+	padding-bottom: 10px;
+}
+
+.home-row-cell-content strong{
+	float: left;
+	width: 240px;
+	margin-left: 5px;
+	font-size:90%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #C0292D;
+}
+
+
+
+.home-row-cell-content ul{
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+
+.home-row-cell-content a:link {
+	color: #0A334B;
+	text-decoration: none;
+}
+.home-row-cell-content a:visited {
+	text-decoration: none;
+	color: #0A334B;
+}
+.home-row-cell-content a:hover {
+	text-decoration: underline;
+	color: #0A334B;
+}
+.home-row-cell-content a:active {
+	text-decoration: none;
+	color: #0A334B;
+}
+
+	
+			.home-row-cell2 {
+	float: left;
+	width: 195px;
+	margin-right: 5px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #666632;
+}
+	
+	.home-row-cell2-content {
+	float: left;
+	width: 140px;
+	margin-left: 5px;
+	font-size: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0A334B;
+}
+
+
+
+
+		.home-row-cell3 {
+	float: left;
+	width: 295px;
+	margin-right: 5px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+}
+.home-row-cell3-content {
+	float: left;
+	width: 240px;
+	margin-left: 5px;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0A334B;
+}
+
+.home-row-cell3-content strong{
+	float: left;
+	width: 240px;
+	margin-left: 5px;
+	font-size:90%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #C0292D;
+}
+
+
+
+.home-row-cell3-content ul{
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+
+.home-row-cell3-content a:link {
+	color: #0A334B;
+	text-decoration: none;
+}
+.home-row-cell3-content a:visited {
+	text-decoration: none;
+	color: #0A334B;
+}
+.home-row-cell3-content a:hover {
+	text-decoration: underline;
+	color: #0A334B;
+}
+.home-row-cell3-content a:active {
+	text-decoration: none;
+	color: #0A334B;
+}
+
+
+
+
+
+
+.icon {
+	width: 302px;
+	float: left;
+	background-color: #BF282D;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 110%;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 12px;
+}
+	
+
+.all-collections {
+	float: left;
+	width: 290px;
+	overflow: auto;
+	border: 1px solid #666666;
+	padding-right: 10px;
+	padding-left: 0px;
+	margin-top: 0px;
+	height: 306px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 90%;
+	background-color: #FFFFFF;
+	font-weight: bold;
+}
+
+.all-collections ul {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	margin-left: 0px;
+	padding-left: 20px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+.all-collections ul li {
+	padding-bottom: 10px;
+}
+
+.all-collections a:link {
+	color: #333333;
+		text-decoration: underline;
+}
+.all-collections a:visited {
+	color: #333333;
+		text-decoration: underline;
+}
+.all-collections a:hover {
+	color: #C0292D;
+		text-decoration: underline;
+}
+.all-collections a:active {
+	color: #C0292D;
+		text-decoration: underline;
+}
+
+
+.announcement {
+	width: 720px;
+	float: left;
+	padding: 10px;
+	background-color: #5D87A1;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.announcement a:link {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.announcement a:visited {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.announcement a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+.announcement a:active {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.highlighted {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #CC0000;
+	width: 100%;
+}
+
+.highlighted a:link {
+	color: #CC0000;
+	text-decoration: underline;
+}
+.highlighted a:visited {
+	color: #CC0000;
+	text-decoration: underline;
+}
+.highlighted a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+.highlighted a:active {
+	color: #FFFFFF;
+}
+
+
+
+.highlighted2 {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #000000;
+	width: 100%;
+}
+
+.highlighted2 a:link {
+	color: #CC0000;
+	text-decoration: underline;
+}
+.highlighted2 a:visited {
+	color: #000000;
+	text-decoration: underline;
+}
+.highlighted2 a:hover {
+	color: #cc0000;
+	text-decoration: underline;
+}
+.highlighted2 a:active {
+	color: #cc0000;
+}
+
+
+
+/* End of CSS from the original site. */
+
+.collection_main {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 1366px;
+   height: 900px;
+   /* border: 1px solid black; */
+}   
+
+.collection_slider {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 415px;
+   max-height: 740px;
+   /* border: 1px solid black; */
+}   
+
+.collection1 {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   /* border: 1px solid black; */
+}   
+
+.collection2 {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 400px;
+   /* border: 1px solid black; */ 
+}   
+
+.collection3 {
+   float: left;
+   /*margin: 10px;*/
+   /*padding: 10px;*/
+   max-width: 300px;
+   /*border: 1px solid black; */
+}   
+
+.home-row-cell-top {
+    float: left;
+    width: 295px;
+    margin-right: 5px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #666632;
+	font-size: smaller;
+}
+
+.home-row-cell {
+    float: left;
+    width: 295px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #666632;
+    font-size: smaller;
+}
+
+.home-row-cell3 {
+    float: left;
+    width: 295px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    font-size: smaller;	
+}
+
+.home-icon {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    float: left;
+    margin-top: 2px;
+    /* border: 1px solid #0A334B; */
+}
+
+/* tabbed area */
+
+.tabbed > input{
+  display : none;
+}
+
+.tabbed > input:not(:checked) + section > div{
+  display : none;
+}
+
+.tabbed > section > h1{
+  float : left;
+}
+
+.tabbed > section > div{
+  float  : right;
+  width  : 100%;
+  margin : 2.5em 0 0 -100%;
+}
+
+.tabbed > section > div{
+  box-sizing    : border-box;
+  padding       : 0.5em 0.75em;
+  border        : 1px solid #ddd;
+  border-radius : 4px;
+  box-shadow    : 0 0 0.5em rgba(0,0,0,0.0625);
+  background    : #EBE3CF;
+}
+
+.tabbed{
+  float : left;
+  width : 100%;
+}
+
+.tabbed > section > h1 > label{
+  cursor              : pointer;
+     -moz-user-select : none;
+      -ms-user-select : none;
+  -webkit-user-select : none;
+}
+
+.tabbed > section > h1{
+  box-sizing  : border-box;
+  padding     : 0.5em 0.5em 0;
+  overflow    : hidden;
+  font-size   : small;
+  font-weight : heavy;
+}
+
+.tabbed > section > h1 > label{
+  display                 : block;
+  padding                 : 0.25em 0.75em;
+  /*border                  : 1px solid #ddd;
+  border-bottom           : none;
+  border-top-left-radius  : 4px;
+  border-top-right-radius : 4px;
+  box-shadow              : 0 0 0.5em rgba(0,0,0,0.0625);
+  background-color        : #DDD; */
+}
+
+
+
+.tabbed > section > div{
+  position : relative;
+  z-index  : 1;
+}
+
+.tabbed > input:checked + section > h1{
+  position : relative;
+  z-index  : 2;
+  background-color: #EBE3CF;
+  border	:none;
+  box-shadow:none;
+  margin-left	: 4px;
+}
+
+.tabbed > input:not(:checked) + section > h1{
+  position : relative;
+  z-index  : 2;
+  border                  : 1px solid #ddd;
+  border-bottom           : none;
+  border-top-left-radius  : 4px;
+  border-top-right-radius : 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow              : 0 0 0.5em rgba(0,0,0,0.0625);
+  background-color        : #DDD;
+  margin-left			  : 4px;
+}
+
+@charset "UTF-8";
+
+/* SpryTabbedPanels.css - Revision: Spry Preview Release 1.4 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* Horizontal Tabbed Panels
+ *
+ * The default style for a TabbedPanels widget places all tab buttons
+ * (left aligned) above the content panel.
+ */
+
+/* This is the selector for the main TabbedPanels container. For our
+ * default style, this container does not contribute anything visually,
+ * but it is floated left to make sure that any floating or clearing done
+ * with any of its child elements are contained completely within the
+ * TabbedPanels container, to minimize any impact or undesireable
+ * interaction with other floated elements on the page that may be used
+ * for layout.
+ *
+ * If you want to constrain the width of the TabbedPanels widget, set a
+ * width on the TabbedPanels container. By default, the TabbedPanels widget
+ * expands horizontally to fill up available space.
+ *
+ * The name of the class ("TabbedPanels") used in this selector is not
+ * necessary to make the widget function. You can use any class name you
+ * want to style the TabbedPanels container.
+ */
+.TabbedPanels {
+	margin: 0px;
+	padding: 0px;
+	clear: none;
+	width: 97%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+}
+
+/* This is the selector for the TabGroup. The TabGroup container houses
+ * all of the tab buttons for each tabbed panel in the widget. This container
+ * does not contribute anything visually to the look of the widget for our
+ * default style.
+ *
+ * The name of the class ("TabbedPanelsTabGroup") used in this selector is not
+ * necessary to make the widget function. You can use any class name you
+ * want to style the TabGroup container.
+ */
+.TabbedPanelsTabGroup {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* This is the selector for the TabbedPanelsTab. This container houses
+ * the title for the panel. This is also the tab "button" that the user clicks
+ * on to activate the corresponding content panel so that it appears on top
+ * of the other tabbed panels contained in the widget.
+ *
+ * For our default style, each tab is positioned relatively 1 pixel down from
+ * where it wold normally render. This allows each tab to overlap the content
+ * panel that renders below it. Each tab is rendered with a 1 pixel bottom
+ * border that has a color that matches the top border of the current content
+ * panel. This gives the appearance that the tab is being drawn behind the
+ * content panel.
+ *
+ * The name of the class ("TabbedPanelsTab") used in this selector is not
+ * necessary to make the widget function. You can use any class name you want
+ * to style this tab container.
+ */
+.TabbedPanelsTab {
+	position: relative;
+	top: 1px;
+	float: left;
+	padding: 4px 10px;
+	margin: 0px 1px 0px 0px;
+	font: bold 0.9em sans-serif;
+	background-color: #DDD;
+	list-style: none;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #999;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+	color: #333333;
+}
+
+/* This selector is an example of how to change the appearnce of a tab button
+ * container as the mouse enters it. The class "TabbedPanelsTabHover" is
+ * programatically added and removed from the tab element as the mouse enters
+ * and exits the container.
+ */
+.TabbedPanelsTabHover {
+	background-color: #CCC;
+}
+
+/* This selector is an example of how to change the appearance of a tab button
+ * container after the user has clicked on it to activate a content panel.
+ * The class "TabbedPanelsTabSelected" is programatically added and removed
+ * from the tab element as the user clicks on the tab button containers in
+ * the widget.
+ *
+ * As mentioned above, for our default style, tab buttons are positioned
+ * 1 pixel down from where it would normally render. When the tab button is
+ * selected, we change its bottom border to match the background color of the
+ * content panel so that it looks like the tab is part of the content panel.
+ */
+.TabbedPanelsTabSelected {
+	background-color: #EBE3CF;
+	border-bottom: 1px solid #EBE3CF;
+}
+
+/* This selector is an example of how to make a link inside of a tab button
+ * look like normal text. Users may want to use links inside of a tab button
+ * so that when it gets focus, the text *inside* the tab button gets a focus
+ * ring around it, instead of the focus ring around the entire tab.
+ */
+.TabbedPanelsTab a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* This is the selector for the ContentGroup. The ContentGroup container houses
+ * all of the content panels for each tabbed panel in the widget. For our
+ * default style, this container provides the background color and borders that
+ * surround the content.
+ *
+ * The name of the class ("TabbedPanelsContentGroup") used in this selector is
+ * not necessary to make the widget function. You can use any class name you
+ * want to style the ContentGroup container.
+ */
+.TabbedPanelsContentGroup {
+	clear: both;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+	background-color: #EBE3CF;
+}
+
+/* This is the selector for the Content panel. The Content panel holds the
+ * content for a single tabbed panel. For our default style, this container
+ * provides some padding, so that the content is not pushed up against the
+ * widget borders.
+ *
+ * The name of the class ("TabbedPanelsContent") used in this selector is
+ * not necessary to make the widget function. You can use any class name you
+ * want to style the Content container.
+ */
+.TabbedPanelsContent {
+	padding: 5px 10px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	line-height: 20px;
+	color: #333333;
+	text-align: justify;
+}
+
+/* This selector is an example of how to change the appearnce of the currently
+ * active container panel. The class "TabbedPanelsContentVisible" is
+ * programatically added and removed from the content element as the panel
+ * is activated/deactivated.
+ */
+.TabbedPanelsContentVisible {
+}
+
+/* Vertical Tabbed Panels
+ *
+ * The following rules override some of the default rules above so that the
+ * TabbedPanels widget renders with its tab buttons along the left side of
+ * the currently active content panel.
+ *
+ * With the rules defined below, the only change that will have to be made
+ * to switch a horizontal tabbed panels widget to a vertical tabbed panels
+ * widget, is to use the "VTabbedPanels" class on the top-level widget
+ * container element, instead of "TabbedPanels".
+ */
+
+/* This selector floats the TabGroup so that the tab buttons it contains
+ * render to the left of the active content panel. A border is drawn around
+ * the group container to make it look like a list container.
+ */
+.VTabbedPanels .TabbedPanelsTabGroup {
+	float: left;
+	width: 10em;
+	height: 20em;
+	background-color: #EEE;
+	position: relative;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+/* This selector disables the float property that is placed on each tab button
+ * by the default TabbedPanelsTab selector rule above. It also draws a bottom
+ * border for the tab. The tab button will get its left and right border from
+ * the TabGroup, and its top border from the TabGroup or tab button above it.
+ */
+.VTabbedPanels .TabbedPanelsTab {
+	float: none;
+	margin: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+/* This selector disables the float property that is placed on each tab button
+ * by the default TabbedPanelsTab selector rule above. It also draws a bottom
+ * border for the tab. The tab button will get its left and right border from
+ * the TabGroup, and its top border from the TabGroup or tab button above it.
+ */
+.VTabbedPanels .TabbedPanelsTabSelected {
+	background-color: #EEE;
+	border-bottom: solid 1px #999;
+}
+
+/* This selector floats the content panels for the widget so that they
+ * render to the right of the tabbed buttons.
+ */
+.VTabbedPanels .TabbedPanelsContentGroup {
+	clear: none;
+	float: left;
+	padding: 0px;
+	width: 30em;
+	height: 20em;
+}
+
+
+</style>
+
+</head>
+<!--
+<h1>Responsive Web Design Demo</h1>
+<h2>Resize this responsive page!</h2>
+-->
+
+<div class="collection_main">
+
+<div class="collection_slider">
+  <!--<h2>Exhibits</h2>-->
+  <div class="the-slider">
+
+
+  
+<div id="myreel"></div>
+
+<div class="paginate">
+<a href="javascript:firstreel.navigate('back')" style="margin-right:50px;"><img src="http://digital.houstonlibrary.org/images/back-arrow.gif" alt="" border="0" /></a>  <a href="javascript:firstreel.navigate('forth')"><img src="http://digital.houstonlibrary.org/images/forward-arrow.gif" alt="" border="0" /></a></div>
+</div>
+
+<!-- Second section first column -->
+<div class="collection3">
+	<div class="whatsnew-section">
+		<br />
+		The Houston Area Digital Archives provides open, online access to the rich collections of the <a href="http://www.houstonlibrary.org/home">Houston Public Library</a> and other community archives. We digitize books, audio and video materials, documents, photographs, manuscripts, maps, memorabilia and more, making them freely available here for research and study.
+		<br />
+		<br />
+		Please enjoy this opportunity to discover and explore the history we hold and share.
+</div>
+</div>
+
+<!-- Tabbed section -->
+
+<div class="tabbed">
+
+  <!-- first panel -->
+
+  <input name="tabbed" id="tabbed1" type="radio">
+  <section>
+    <h1>
+      <label for="tabbed1"> HPL Special Collections </label>
+    </h1>
+    <div class="TabbedPanelsContent">
+		<p align="left"><a href="http://www2.houstonlibrary.org/hmrc/">Houston Metropolitan Research Center</a></p>
+		<p align="left"><a href="http://www.thegregoryschool.org">African American Library at the Gregory School</a></p>
+		<p align="left"><a href="http://www2.houstonlibrary.org/clayton/">Clayton Library Center for Genealogical Research</a><br />
+		<br />
+	</div>
+  </section>
+
+  <!-- second panel -->
+
+  <input name="tabbed" id="tabbed2" type="radio">
+  <section>
+    <h1>
+      <label for="tabbed2"> More Resources </label>
+    </h1>
+    <div class="TabbedPanelsContent">
+		<p><a href="http://www.lib.utexas.edu/taro/browse/browse_houpub1.html">Houston Public Library Finding Aids on TARO</a></p>
+		<p><a href="/cdm/landingpage/collection/hohp-gen">Houston Oral History Project Website</a></p>
+		<p><a href="/cdm/ref/collection/curriculum-project/id/2">About the Julia Ideson Building</a></p>
+		<p><a href="/cdm/ref/collection/curriculum-project/id/3">The Library Ghost</a></p>
+	</div>
+  </section>
+
+<!-- third panel -->
+
+  <input name="tabbed" id="tabbed3" type="radio">
+  <section>
+    <h1>
+      <label for="tabbed3"> About Us </label>
+    </h1>
+    <div class="TabbedPanelsContent">
+		<p><strong>The mission of the Houston Area Digital Archive is to:</strong> <br />
+			Provide broad access to HPL's archival collections through on-line presentation and searchable metadata, 
+			preserve archival resources by providing a digital means of accessing contents, and promote the discovery and use of our unique special collections</p>
+			<div class="divider"></div>
+			<strong>Houston Area Digital Archives</strong><br />
+			Houston Public Library<br />
+			500 McKinney Ave.<br />
+			Houston, Texas 77002<br />
+	</div>
+  </section>
+</div>
+
+</div>
+
+
+<div class="collection2">
+<div id="contentleft">
+<a href="/cdm/singleitem/collection/images/id/1525"><img src="http://digital.houstonlibrary.net/feature/images/main-1856.jpg" alt="" width="302" height="75" border="0" /></a>
+
+
+
+<div class="home-row-cell-top">
+<div class="home-icon"> <img src="http://digital.houstonlibrary.org/images/oral-hist.jpg" alt="oral histories" width="43" height="62" border="0"/></div>
+<div class="home-row-cell-content">
+
+<strong>Oral Histories</strong>
+<br />
+<ul>
+
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/hohp-gen">Foundation for India Studies</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/gsinterview">Gregory School Interviews</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/Interviews">HMRC Oral History Archives</a></li>
+<li>&#8226;&nbsp;<a href="http://www.houstonoralhistory.org/">Houston Oral History Project</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/oralhistory">Mayor Bill White Collection</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/nvoicesoh">Neighborhood Voices</a></li>
+</ul>
+
+</div>
+</div>
+
+<div class="home-row-cell">
+<div class="home-icon"><img src="http://digital.houstonlibrary.org/images/ellington.jpg" alt="african american collections" width="43" height="62" border="0"/></div>
+<div class="home-row-cell-content"> 
+
+<strong>African American Collections</strong>
+<br />
+<ul>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/lawson">The Lawson &quot;Love Letters&quot;</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/search/searchterm/MSS0337">Jewel Brown</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/search/searchterm/MSS003">C. F. and Hortense Smith</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/search/searchterm/MSS1457">Clifton F. Richardson Sr.</a></li>
+</ul>
+
+</div>
+</div>
+
+<div class="home-row-cell3">
+<div class="home-icon"><img src="http://digital.houstonlibrary.org/images/Buffalo_B.jpg" alt="houston area collections" width="43" height="62" border="0"/></div>
+<div class="home-row-cell3-content"> 
+
+<strong>Houston Area Collections</strong>
+<br />
+
+<ul>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/BelLib">Bellaire City Library Digital Archives</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/citydir">Houston City Directories</a></li>
+<li>&#8226;&nbsp;<a href="/cdm/landingpage/collection/p17006coll1">E. A. "Squatty" Lyons Papers</a></li>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="collection3">
+  <span class="icon"> Browse All Collections</span>
+<div class="all-collections">
+<!--CHANGED HEIGHT OF THIS DIV FROM  250PX FOR OLDEST PHOTO IMAGE -->
+<ul>
+<li><a href="/cdm/landingpage/collection/gregory">African American Library at <br />
+the Gregory School </a></li>
+<li><a href="/cdm/landingpage/collection/ArchDrawing">Architectural Drawings </a></li>
+<li><a href="/cdm/landingpage/collection/archival">Archival   Collections </a></li>
+<!--<li><a href="http://digital.houstonlibrary.org/cdm/search/searchterm/bestof">Best Photos From The HMRC</a></li>-->
+<!--<li><a href="/cdm/landingpage/collection/BelLib">Bellaire City Library Collection </a></li>-->
+<li><a href="/cdm/landingpage/collection/books">Books, Reports and Periodicals </a></li>
+<li><a href="/cdm/landingpage/collection/dowling">Dick Dowling   Collection </a></li>
+<li><a href="http://archive.org/details/houstonlibrary">eBooks of publications in the HMRC</a></li>
+<li><a href="/cdm/landingpage/collection/film">Film Collection</a></li>
+<!--<li><a href="/cdm/landingpage/collection/EAD">Finding Aids </a></li>-->
+<!--<li><a href="/cdm/landingpage/collection/mareshwpa">Henry Maresh   WPA Files</a></li>-->
+<li><a href="/cdm/landingpage/collection/citydir">Houston City Directories </a></li>
+<li><a href="/cdm/landingpage/collection/waterways">Houston Waterways</a></li>
+<li><a href="/cdm/landingpage/collection/barnstone">Howard Barnstone Collection </a></li>
+<li><a href="/cdm/landingpage/collection/images">Image Collections</a></li>
+<li><a href="/cdm/landingpage/collection/lawson">Rev. William &quot;Bill&quot; Lawson   Collection </a></li>
+<li><a href="/cdm/landingpage/collection/maps">Maps</a></li>
+<li><a href="/cdm/landingpage/collection/milsaps">Milsaps Collection</a></li>
+<!--<li><a href="http://digital.houstonlibrary.org/cdm/landingpage/collection/gsinterview">Oral Histories: African American Library at the Gregory School</a></li>-->
+<!--<li><a href="http://digital.houstonlibrary.org/cdm/search/collection/hohp-gen">Oral Histories: Foundation for India Studies</a></li>-->
+<!--<li><a href="/cdm/landingpage/collection/Interviews">Oral   Histories: HMRC Collection </a></li>-->
+<!--<li><a href="/cdm/landingpage/collection/oralhistory">Oral Histories: Mayor Bill White Collection </a></li>-->
+<!--<li><a href="/cdm/landingpage/collection/nvoicesoh">Oral   Histories: Neighborhood Voices</a></li>-->
+<li><a href="http://digital.houstonlibrary.net/oh-clips/">Oral History Clips</a></li>
+<li><a href="/cdm/landingpage/collection/postcards">Postcard   Collection </a></li>
+<li><a href="/cdm/landingpage/collection/posters">Posters</a></li>
+<li><a href="/cdm/landingpage/collection/riveroaks">River Oaks   Collection </a></li>
+<li><a href="/cdm/landingpage/collection/schlueter">Schlueter   Photograph Collection </a></li>
+<li><a href="/cdm/landingpage/collection/SheetMusic">Sheet Music Collection </a></li>
+<!--<li><a href="http://digital.houstonlibrary.org/timeline/">Timelines </a></li>-->
+<li><a href="/cdm/landingpage/collection/wpa">WPA Maresh Files </a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<!-- End Responsive Template -->
+
+
+
+</body>
+</html>
